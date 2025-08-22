@@ -1,0 +1,67 @@
+.career-page {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.career-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 125px;
+    padding-left: 50px;
+    margin: 10px;
+    
+}
+
+.career-list {
+    width: 100%;
+    padding: 0 25px;
+}
+
+.career-list-item {
+    height: 553px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px;
+}
+.date {
+    font-size: 14px;
+}
+
+.description-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.description-list-item::before {
+    content: '•';
+    margin-right: 10px;
+}
+
+.institution {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.role {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.st-lists-heading {
+    margin-top: 70px;
+}
+
+.st-lists-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.st-lists-item-small {
+    padding: 10px;
+    background-color: #232323;
+    border-radius: 10px;
+}

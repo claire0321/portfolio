@@ -107,3 +107,7 @@ body {
     z-index: 100;
     cursor: pointer;
 }
+
+.grey-background {
+    background-color: #373737;
+}
