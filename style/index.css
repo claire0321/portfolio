@@ -95,3 +95,15 @@ body {
 .page-contents {
     padding:50px;
 }
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content;
+}
+
+.heading {
+    z-index: 100;
+    cursor: pointer;
+}

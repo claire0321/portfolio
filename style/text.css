@@ -43,3 +43,7 @@ h2, p {
     padding-bottom: 7px;
     border-bottom: 4px solid; 
 }
+
+.heading-off {
+    opacity: 25%;
+}
