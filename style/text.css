@@ -43,6 +43,7 @@ h2, p {
 .heading {
     font-size: 50px;
     opacity: 25%;
+    color: #fefefe;
 }
 
 .heading.active {

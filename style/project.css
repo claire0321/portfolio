@@ -10,3 +10,17 @@
     padding-left: 50px;
     margin: 10px;
 }
+
+.project-list {
+    width: 50%;
+    padding: 0 25px;
+}
+
+.project-list-item {
+    height: 553px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 50px;
+}
+

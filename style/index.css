@@ -124,9 +124,3 @@ body {
     display: flex;
     min-height: 100vh;
 }
-
-.main-content {
-    /* overflow-y: scroll;
-    flex-grow: 1; */
-    display: flex;
-}
