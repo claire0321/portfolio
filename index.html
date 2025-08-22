@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style/text.css">
     <link rel="stylesheet" href="style/about_me.css">
     <link rel="stylesheet" href="style/career.css">
+    <link rel="stylesheet" href="style/project.css">
 </head>
 
 <body class="page">
@@ -30,76 +31,184 @@
                 </div>
             </div>
         </div>
-        <div class="black-background page">
-            <div class="About-me-page page-contents">
-                <h1 class="heading font-white">About Me</h1>
-                <div class="skills-tools-container center">
-                    <div class="skills-tools">
-                        <span class="st-heading font-white font-bold underline">Skills</span>
-                        <div class="skills-tools-list font-white font-bold">
-                            <div class="st-list-item">
-                                <span>Python</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 90%;"></div>
-                                </div>
+        <div class="About-me-page page-contents black-background page">
+            <h1 class="heading font-white">About Me</h1>
+            <div class="skills-tools-container center">
+                <div class="skills-tools">
+                    <span class="st-heading font-white font-bold underline">Skills</span>
+                    <div class="skills-tools-list font-white font-bold">
+                        <div class="st-list-item">
+                            <span>Python</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%;"></div>
                             </div>
-                            <div class="st-list-item">
-                                <span>Java</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 60%;"></div>
-                                </div>
+                        </div>
+                        <div class="st-list-item">
+                            <span>Java</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 60%;"></div>
                             </div>
-                            <div class="st-list-item">
-                                <span>RStudio</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 80%;"></div>
-                                </div>
+                        </div>
+                        <div class="st-list-item">
+                            <span>RStudio</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 80%;"></div>
                             </div>
-                            <div class="st-list-item">
-                                <span>HTML/CSS</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 50%;"></div>
-                                </div>
+                        </div>
+                        <div class="st-list-item">
+                            <span>HTML/CSS</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 50%;"></div>
                             </div>
-                            <div class="st-list-item">
-                                <span>MYSQL</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 60%;"></div>
+                        </div>
+                        <div class="st-list-item">
+                            <span>MYSQL</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-tools">
+                    <span class="st-heading font-white font-bold underline">Tools</span>
+                    <div class="skills-tools-list font-white font-bold">
+                        <div class="st-list-item">
+                            <span>Matlab</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="st-list-item">
+                            <span>Kubernetes</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="st-list-item">
+                            <span>Docker</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="st-list-item">
+                            <span>CI/CD</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <div class="st-list-item">
+                            <span>Jenkins</span>
+                            <div class="bar">
+                                <div class="progress" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="side-nav">
+                <h1 class="heading font-white" data-target="career-page" data-id="career-page">Career</h1>
+                <h1 class="heading font-white" data-target="project-page" data-id="project-page">Project</h1>
+                <h1 class="heading font-white" data-target="education-page" data-id="education-page">Education</h1>
+            </div>
+            <div class="page-content">
+                <div class="black-background page" id="career-page">
+                    <div class="career-page page-contents">
+                        <div class="career-container main-content">
+                            <div class="career-list">
+                                <div class="career-list-item grey-background">
+                                    <span class="font-grey date">2024.12 - 2025.02</span>
+                                    <span class="font-white institution">Timegate</span>
+                                    <span class="font-white role">@ Internship</span>
+                                    <div class="font-grey description-list">
+                                        <span class="description-list-item">FastAPI</span>
+                                        <span class="description-list-item">Integrated MYSQL</span>
+                                        <span class="description-list-item">CI/CD</span>
+                                        <span class="description-list-item">Authorisation & Authentication
+                                            Middleware</span>
+                                        <span class="description-list-item">Docker</span>
+                                    </div>
+                                    <p class="font-grey st-lists-heading"> Skills & Tools</p>
+                                    <div class="st-lists-container">
+                                        <span class="font-white st-lists-item-small">Python</span>
+                                        <span class="font-white st-lists-item-small">MySQL</span>
+                                        <span class="font-white st-lists-item-small">Docker</span>
+                                        <span class="font-white st-lists-item-small">Jenkins</span>
+                                        <span class="font-white st-lists-item-small">Harbor</span>
+                                        <span class="font-white st-lists-item-small">ArgoCD</span>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="skills-tools">
-                        <span class="st-heading font-white font-bold underline">Tools</span>
-                        <div class="skills-tools-list font-white font-bold">
-                            <div class="st-list-item">
-                                <span>Matlab</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 90%;"></div>
+                </div>
+                <div class="black-background page" id="project-page">
+                    <div class="Project-page page-contents">
+                        <div class="project-container main-content">
+
+                        </div>
+                        <div class="career-page page-contents">
+                            <div class="career-container main-content">
+                                <div class="career-list">
+                                    <div class="career-list-item grey-background">
+                                        <span class="font-grey date">2024.12 - 2025.02</span>
+                                        <span class="font-white institution">Timegate</span>
+                                        <span class="font-white role">@ Internship</span>
+                                        <div class="font-grey description-list">
+                                            <span class="description-list-item">FastAPI</span>
+                                            <span class="description-list-item">Integrated MYSQL</span>
+                                            <span class="description-list-item">CI/CD</span>
+                                            <span class="description-list-item">Authorisation & Authentication
+                                                Middleware</span>
+                                            <span class="description-list-item">Docker</span>
+                                        </div>
+                                        <p class="font-grey st-lists-heading"> Skills & Tools</p>
+                                        <div class="st-lists-container">
+                                            <span class="font-white st-lists-item-small">Python</span>
+                                            <span class="font-white st-lists-item-small">MySQL</span>
+                                            <span class="font-white st-lists-item-small">Docker</span>
+                                            <span class="font-white st-lists-item-small">Jenkins</span>
+                                            <span class="font-white st-lists-item-small">Harbor</span>
+                                            <span class="font-white st-lists-item-small">ArgoCD</span>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="st-list-item">
-                                <span>Kubernetes</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 40%;"></div>
-                                </div>
-                            </div>
-                            <div class="st-list-item">
-                                <span>Docker</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 60%;"></div>
-                                </div>
-                            </div>
-                            <div class="st-list-item">
-                                <span>CI/CD</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 30%;"></div>
-                                </div>
-                            </div>
-                            <div class="st-list-item">
-                                <span>Jenkins</span>
-                                <div class="bar">
-                                    <div class="progress" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="black-background page" id="education-page">
+                    <div class="Education-page page-contents">
+                        <div class="project-container main-content"></div>
+                        <div class="career-page page-contents">
+                            <div class="career-container main-content">
+                                <div class="career-list">
+                                    <div class="career-list-item grey-background">
+                                        <span class="font-grey date">2024.12 - 2025.02</span>
+                                        <span class="font-white institution">Timegate</span>
+                                        <span class="font-white role">@ Internship</span>
+                                        <div class="font-grey description-list">
+                                            <span class="description-list-item">FastAPI</span>
+                                            <span class="description-list-item">Integrated MYSQL</span>
+                                            <span class="description-list-item">CI/CD</span>
+                                            <span class="description-list-item">Authorisation & Authentication
+                                                Middleware</span>
+                                            <span class="description-list-item">Docker</span>
+                                        </div>
+                                        <p class="font-grey st-lists-heading"> Skills & Tools</p>
+                                        <div class="st-lists-container">
+                                            <span class="font-white st-lists-item-small">Python</span>
+                                            <span class="font-white st-lists-item-small">MySQL</span>
+                                            <span class="font-white st-lists-item-small">Docker</span>
+                                            <span class="font-white st-lists-item-small">Jenkins</span>
+                                            <span class="font-white st-lists-item-small">Harbor</span>
+                                            <span class="font-white st-lists-item-small">ArgoCD</span>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -107,14 +216,14 @@
                 </div>
             </div>
         </div>
-        <div class="black-background page">
-            <div class="career-page page-contents" id="career-page">
+        <!-- <div class="black-background page"  id="career-page">
+            <div class="career-page page-contents">
                 <div class="side-nav">
-                    <h1 class="heading font-white heading-on" data-target="career-page">Career</h1>
-                    <h1 class="heading font-white heading-off" data-target="project-page">Project</h1>
-                    <h1 class="heading font-white heading-off" data-target="education-page">Education</h1>
+                    <h1 class="heading font-white" data-target="career-page">Career</h1>
+                    <h1 class="heading font-white" data-target="project-page">Project</h1>
+                    <h1 class="heading font-white" data-target="education-page">Education</h1>
                 </div>
-                <div class="career-container">
+                <div class="career-container main-content">
                     <div class="career-list">
                         <div class="career-list-item grey-background">
                             <span class="font-grey date">2024.12 - 2025.02</span>
@@ -145,21 +254,25 @@
         <div class="black-background page" id="project-page">
             <div class="Project-page page-contents">
                 <div class="side-nav">
-                    <h1 class="heading font-white heading-off" data-target="career-page">Career</h1>
-                    <h1 class="heading font-white heading-on" data-target="project-page">Project</h1>
-                    <h1 class="heading font-white heading-off" data-target="education-page">Education</h1>
+                    <h1 class="heading font-white" data-target="career-page">Career</h1>
+                    <h1 class="heading font-white" data-target="project-page">Project</h1>
+                    <h1 class="heading font-white" data-target="education-page">Education</h1>
+                </div>
+                <div class="project-container main-content">
+
                 </div>
             </div>
         </div>
         <div class="black-background page" id="education-page">
             <div class="Education-page page-contents">
                 <div class="side-nav">
-                    <h1 class="heading font-white heading-off" data-target="career-page">Career</h1>
-                    <h1 class="heading font-white heading-off" data-target="project-page">Project</h1>
-                    <h1 class="heading font-white heading-on" data-target="education-page">Education</h1>
+                    <h1 class="heading font-white" data-target="career-page">Career</h1>
+                    <h1 class="heading font-white" data-target="project-page">Project</h1>
+                    <h1 class="heading font-white" data-target="education-page">Education</h1>
                 </div>
+                <div class="project-container main-content"></div>
             </div>
-        </div>
+        </div> -->
     </main>
     <script src="index.js"></script>
 

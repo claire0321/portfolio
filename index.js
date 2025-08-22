@@ -18,3 +18,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all sections and side navigation
+    const sections = document.querySelectorAll('.page');
+    const navHeadings = document.querySelectorAll('.side-nav .heading');
+
+    const observerOptions = {
+        root: null, // Based on view point
+        // rootMargin: '0px',
+        threshold: 0.5 // when view point is 50%
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Get current section ID
+                const currentSectionId = entry.target.id;
+
+                // Remove all active class
+                navHeadings.forEach(heading => {
+                    heading.classList.remove('active');
+                    // if (heading.getAttribute('data-id') === currentSectionId) {
+                    //     heading.classList.add('active');
+                    // }
+                });
+
+                // Find current section and add active class
+                const activeHeading = document.querySelector(`.side-nav .heading[data-id="${currentSectionId}"]`);
+                if (activeHeading) {
+                    activeHeading.classList.add('active');
+                }
+            }
+        });
+    }, observerOptions);
+
+    // observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});

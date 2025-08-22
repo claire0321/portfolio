@@ -1,0 +1,12 @@
+.project-page {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-right: 125px;
+    padding-left: 50px;
+    margin: 10px;
+}

@@ -29,10 +29,6 @@ h2, p {
     font-weight: bold;
 }
 
-.heading {
-    font-size: 50px;
-}
-
 .st-heading {
     text-align: left;
     font-size: 40px;
@@ -44,8 +40,13 @@ h2, p {
     border-bottom: 4px solid; 
 }
 
-.heading-off {
+.heading {
+    font-size: 50px;
     opacity: 25%;
+}
+
+.heading.active {
+    opacity: 100%;
 }
 
 .font-grey {

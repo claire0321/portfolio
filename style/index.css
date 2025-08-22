@@ -93,21 +93,40 @@ body {
 }
 
 .page-contents {
-    padding:50px;
+    padding: 50px;
+    /* display: flex; */
+    height: 100vh;
+    flex-grow: 1;
 }
 
 .side-nav {
+    position: sticky;
+    top: 50px;
+    left: 50px;
+    width: fit-content;
+    height: 100vh;
+
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: fit-content;
 }
 
 .heading {
     z-index: 100;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
 
 .grey-background {
     background-color: #373737;
+}
+
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    /* overflow-y: scroll;
+    flex-grow: 1; */
+    display: flex;
 }
