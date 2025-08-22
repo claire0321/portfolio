@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+h2, p {
+    font: inherit;
+    word-break: keep-all;
+    white-space: pre-wrap;
+}
+
+.font-white {
+    color: #fefefe;
+}
+
+.font-black {
+    color: #232323;
+}
+
+.engineer {
+    font-size: 200px;
+    font-weight: bold;
+}
+
+.greeting {
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: -90px;
+}
+
+.font-black strong {
+    font-weight: bold; /* Ensure strong text is bold */
+}
+
+.heading {
+    font-size: 60px;
+}
