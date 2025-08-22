@@ -94,7 +94,6 @@ body {
 
 .page-contents {
     padding: 50px;
-    /* display: flex; */
     height: 100vh;
     flex-grow: 1;
 }
