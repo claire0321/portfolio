@@ -11,18 +11,20 @@
     <title>Portofolio of Claire Kim</title>
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/text.css">
+    <link rel="stylesheet" href="style/about_me.css">
 </head>
 
 <body class="page">
     <main id="root">
         <div class="home-page">
             <div class="navigation">
-                <a href="https://github.com/ikim318">Github</a>
-                <a href="https://www.linkedin.com/in/inkyeongkim/">LinkedIn</a>
+                <a href="https://github.com/ikim318" class="underline">Github</a>
+                <a href="https://www.linkedin.com/in/inkyeongkim/" class="underline">LinkedIn</a>
             </div>
             <div class="home-contents">
                 <p class="font-white engineer center">Engineer</p>
-                <h2 class="greeting font-black center">Hello I am <strong class="font-black">Claire Kim</strong>!</h2>
+                <h2 class="greeting font-black center">Hello I am <span class="font-black font-bold">Claire Kim</span>!
+                </h2>
                 <div class="profile center">
                     <img src="img/profile.png" alt="Claire Kim's Profile" class="profile-img">
                 </div>
@@ -31,12 +33,78 @@
         <div class="black-background page">
             <div class="About-me-page page-contents">
                 <h1 class="heading font-white">About Me</h1>
-                <table>
-                    <tr>
-                        <th>Skills</th>
-                        <th>Tools</th>
-                    </tr>
-                </table>
+                <div class="skills-tools-container center">
+                    <div class="skills-tools">
+                        <span class="st-heading font-white font-bold underline">Skills</span>
+                        <div class="skills-tools-list font-white font-bold">
+                            <div class="st-list-item">
+                                <span>Python</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="st-list-item">
+                                <span>Java</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="st-list-item">
+                                <span>RStudio</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="st-list-item">
+                                <span>HTML/CSS</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                            <div class="st-list-item">
+                                <span>MYSQL</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-tools">
+                        <span class="st-heading font-white font-bold underline">Tools</span>
+                        <div class="skills-tools-list font-white font-bold">
+                            <div class="st-list-item">
+                                <span>Matlab</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="st-list-item">
+                                <span>Kubernetes</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                            <div class="st-list-item">
+                                <span>Docker</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="st-list-item">
+                                <span>CI/CD</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 30%;"></div>
+                                </div>
+                            </div>
+                            <div class="st-list-item">
+                                <span>Jenkins</span>
+                                <div class="bar">
+                                    <div class="progress" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="Career-page black-background page">
@@ -48,15 +116,3 @@
 </body>
 
 </html>
-<!-- <header>
-    <nav class="navigation">
-    </nav>
-</header>
-
-<section class="title">
-    <h2 id="text">Engineer</h2>
-    <div class="profile">
-        <img src="img/profile.png" alt="Claire Kim's Profile" class="profile-img">
-    </div>
-</section>
-<script src="script.js"></script> -->
