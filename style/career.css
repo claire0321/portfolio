@@ -9,7 +9,6 @@
 .career-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 }
 
 .career-list {
@@ -63,5 +62,5 @@
 .st-lists-item-small {
     padding: 10px;
     background-color: #232323;
-    border-radius: 10px;
+    border-radius: 20px;
 }
