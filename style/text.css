@@ -6,6 +6,7 @@ h2, p {
     white-space: pre-wrap;
 }
 
+
 .font-white {
     color: #fefefe;
 }
@@ -32,12 +33,6 @@ h2, p {
 .st-heading {
     text-align: left;
     font-size: 40px;
-}
-
-.underline {
-    display: inline;
-    padding-bottom: 7px;
-    border-bottom: 4px solid; 
 }
 
 .heading {

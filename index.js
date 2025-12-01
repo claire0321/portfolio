@@ -58,3 +58,36 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+// ----------------------------------------------------------------------------
+// -------------------------- Scroll to Top Button ----------------------------
+// ----------------------------------------------------------------------------
+let toTopButton = document.getElementById("toTop");
+
+window.onscroll = function() {scrollFunction()};
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+// ----------------------------------------------------------------------------
+// ------------------------------- Contact Modal ------------------------------
+// ----------------------------------------------------------------------------
+var modal = document.getElementById("contactModal");
+var btn = document.getElementById("contactBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+    document.body.style.overflow = 'hidden';
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+    document.body.style.overflow = 'auto';
+}
+
+document.querySelector(".modal-box").addEventListener("click", function(event) {
+    event.stopPropagation();
+});

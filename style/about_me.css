@@ -1,3 +1,8 @@
+.about-me-page {
+    position: relative;
+    z-index: 2;
+}
+
 .skills-tools-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,7 +33,7 @@
     vertical-align: middle;
 }
 
-.st-list-item  span{
+.st-list-item span {
     display: inline-block;
     width: 120px;
     flex-shrink: 0;

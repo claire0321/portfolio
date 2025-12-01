@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: #e0e0e0;
+}
+
+/* ---------------- NAVIGATION BAR ---------------- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 100;
+}
+
+.nav-left a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    padding-bottom: 2px;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: #d9d9d9;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px; /* Navbar 높이만큼 공간 확보 */
+}
+
+.bg-title {
+    font-size: 130px;
+    color: white;
+    opacity: 0.7;
+    margin: 0;
+    font-weight: 900;
+}
+
+.sub-title {
+    font-size: 28px;
+    margin-top: -20px;
+    font-weight: bold;
+    color: #222;
+}
+
+.avatar-wrapper {
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 240px;
+    height: auto;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    font-size: 25px;
+    color: #444;
+}
+
+/* Email footer */
+.email {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    font-size: 16px;
+    color: #444;
+}
+
+/* Right-side floating buttons */
+.right-buttons {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-buttons button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background: white;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+}

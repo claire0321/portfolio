@@ -15,23 +15,28 @@
     <link rel="stylesheet" href="style/career.css">
     <link rel="stylesheet" href="style/project.css">
     <link rel="stylesheet" href="style/education.css">
+    <link rel="stylesheet" href="style/outro.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
-    <div class="home-page">
-        <div class="navigation">
-            <a href="https://github.com/ikim318" class="underline" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/inkyeongkim/" class="underline" target="_blank">LinkedIn</a>
-        </div>
+    <div class="white-background-page">
+        <nav class="navbar">
+            <div class="nav-left">
+                <a href="https://github.com/ikim318" class="underline" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/inkyeongkim/" class="underline" target="_blank">LinkedIn</a>
+            </div>
+        </nav>
         <div class="home-contents">
             <p class="font-white engineer center">Engineer</p>
             <h2 class="greeting font-black center">Hello I am <span class="font-bold">Claire Kim</span>!</h2>
             <div class="profile center">
                 <img src="img/profile.png" alt="Claire Kim's Profile" class="profile-img">
             </div>
+            <div class="email">claire.inkyeong@gmail.com</div>
         </div>
     </div>
-    <div class="About-me-page page-contents page">
+    <div class="about-me-page page-contents page">
         <h1 class="heading font-white" style="opacity: 1;">About Me</h1>
         <div class="skills-tools-container center">
             <div class="skills-tools">
@@ -112,7 +117,7 @@
             <h1 class="heading font-white" data-target="project-page" data-id="project-page">Project</h1>
             <h1 class="heading font-white" data-target="education-page" data-id="education-page">Education</h1>
         </div>
-        <div class="page-content">
+        <div class="page-contents">
             <div class="career-page page-contents page" id="career-page">
                 <div class="career-container">
                     <div class="career-list">
@@ -155,7 +160,8 @@
                                 <span class="description-list-item">Operations Research (OR)</span>
                                 <span class="description-list-item">Computational Mechanics</span>
                                 <span class="description-list-item">Data Science</span>
-                                <span class="description-list-item">First in Course Award in Object-Oriented Programming</span>
+                                <span class="description-list-item">First in Course Award in Object-Oriented
+                                    Programming</span>
                             </div>
                             <p class="font-grey st-lists-heading"> Skills & Tools</p>
                             <div class="st-lists-container">
@@ -172,9 +178,41 @@
             </div>
         </div>
     </div>
+    <div class="white-background-page paper-background">
+        <div class="outro-contents page">
+            <p class="font-white engineer center">Thank you</p>
+            <div class="outro-navigation">
+                <a href="https://github.com/ikim318" class="underline center" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/inkyeongkim/" class="underline center" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+    <div class="right-buttons">
+        <button class="contact-btn" id="contactBtn">
+            <img src="img/contact.png" alt="Contact Me" class="right-buttons-icon">
+        </button>
+        <button onclick="topFunction()" id="toTop" class="toTop-btn">
+            <img src="img/up-arrow.png" alt="Scroll to Top" class="right-buttons-icon">
+        </button>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="modal-box">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <h1>Contact</h1>
+                <form id="contactForm">
+                    <input type="email" id="emailInput" placeholder="Email" required>
+                    <textarea id="contextInput" placeholder="Context" required></textarea>
+                    <button type="submit" class="send-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="index.js"></script>
     <script src="project.js"></script>
-
 </body>
 
 </html>

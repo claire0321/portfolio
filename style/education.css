@@ -1,15 +1,12 @@
 .education-page {
-    /* display: grid;
-    grid-template-columns:  1fr; */
-    padding-right: 125px;
+    /* padding-right: 125px; */
     padding-left: 50px;
     margin: 10px;
 }
 
 .education-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .education-list {
@@ -18,7 +15,7 @@
 }
 
 .education-list-item {
-    height: 553px;
+    /* height: 553px; */
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -50,7 +47,7 @@
     font-weight: bold;
 }
 
-.st-lists-heading {
+/* .st-lists-heading {
     margin-top: 20%;
 }
 
@@ -64,4 +61,4 @@
     padding: 10px;
     background-color: #232323;
     border-radius: 20px;
-}
+} */
