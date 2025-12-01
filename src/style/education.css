@@ -1,5 +1,4 @@
 .education-page {
-    /* padding-right: 125px; */
     padding-left: 50px;
     margin: 10px;
 }
@@ -7,6 +6,8 @@
 .education-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
 }
 
 .education-list {
@@ -15,7 +16,6 @@
 }
 
 .education-list-item {
-    /* height: 553px; */
     display: flex;
     flex-direction: column;
     gap: 15px;
