@@ -1,0 +1,27 @@
+/* ---------------- PROJECT CONTAINER ONLY ---------------- */
+.project-list-item {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-list-item:hover {
+    transform: translateY(-5px);
+}
+
+.project-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-st-lists-container {
+    margin: 12px 25px;
+}

@@ -1,26 +1,35 @@
+/* ---------------- CONTAINER ------------------ */
+.career-page,
+.project-page,
 .education-page {
     padding-left: 50px;
     margin: 10px;
 }
 
+.career-container,
+.project-container,
 .education-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
 }
 
+.career-list,
+.project-list,
 .education-list {
     width: 100%;
     padding: 0 25px;
 }
 
+.career-list-item,
 .education-list-item {
     display: flex;
     flex-direction: column;
     gap: 15px;
     padding: 50px;
 }
+
+/* Container Info */
 .date {
     font-size: 14px;
 }
@@ -33,7 +42,7 @@
 }
 
 .description-list-item::before {
-    content: '•';
+    content: "•";
     margin-right: 10px;
 }
 
@@ -47,18 +56,34 @@
     font-weight: bold;
 }
 
-/* .st-lists-heading {
-    margin-top: 20%;
+/* Skills And Tools */
+.st-lists-heading {
+    margin-top: 70px;
 }
 
-.st-lists-container {
+.st-lists-container,
+.project-st-lists-container {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 5px;
+    font-size: 10px;
+    bottom: 0px;
 }
 
 .st-lists-item-small {
     padding: 10px;
     background-color: #232323;
-    border-radius: 20px;
-} */
+    border-radius: 15px;
+}
+
+/* Into Sections */
+.container-info {
+    display: grid;
+    gap: 10px;
+    margin-bottom: auto;
+}
+
+.skills-section {
+    display: grid;
+    gap: 10px;
+}

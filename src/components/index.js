@@ -1,60 +1,62 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Select all the side bar
-    const navHeadings = document.querySelectorAll('.side-nav .heading');
+    const navHeadings = document.querySelectorAll(".side-nav .heading");
 
     // For each menu add click listener event
-    navHeadings.forEach(heading => {
-        heading.addEventListener('click', function() {
+    navHeadings.forEach((heading) => {
+        heading.addEventListener("click", function () {
             // get the target id of each page
-            const targetId = this.getAttribute('data-target');
+            const targetId = this.getAttribute("data-target");
             const targetPage = document.getElementById(targetId);
 
             if (targetPage) {
                 // if target page exists, scroll smooth
                 targetPage.scrollIntoView({
-                    behavior: 'smooth'
+                    behavior: "smooth",
                 });
             }
         });
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Get all sections and side navigation
-    const sections = document.querySelectorAll('.page');
-    const navHeadings = document.querySelectorAll('.side-nav .heading');
+    const sections = document.querySelectorAll(".page");
+    const navHeadings = document.querySelectorAll(".side-nav .heading");
 
     const observerOptions = {
         root: null, // Based on view point
         // rootMargin: '0px',
-        threshold: 0.5 // when view point is 50%
+        threshold: 0.5, // when view point is 50%
     };
 
     const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 // Get current section ID
                 const currentSectionId = entry.target.id;
 
                 // Remove all active class
-                navHeadings.forEach(heading => {
-                    heading.classList.remove('active');
+                navHeadings.forEach((heading) => {
+                    heading.classList.remove("active");
                     // if (heading.getAttribute('data-id') === currentSectionId) {
                     //     heading.classList.add('active');
                     // }
                 });
 
                 // Find current section and add active class
-                const activeHeading = document.querySelector(`.side-nav .heading[data-id="${currentSectionId}"]`);
+                const activeHeading = document.querySelector(
+                    `.side-nav .heading[data-id="${currentSectionId}"]`
+                );
                 if (activeHeading) {
-                    activeHeading.classList.add('active');
+                    activeHeading.classList.add("active");
                 }
             }
         });
     }, observerOptions);
 
     // observe each section
-    sections.forEach(section => {
+    sections.forEach((section) => {
         observer.observe(section);
     });
 });
@@ -63,8 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
 // -------------------------- Scroll to Top Button ----------------------------
 // ----------------------------------------------------------------------------
 let toTopButton = document.getElementById("toTop");
-
-window.onscroll = function() {scrollFunction()};
 
 function topFunction() {
     document.body.scrollTop = 0;
@@ -78,16 +78,18 @@ var modal = document.getElementById("contactModal");
 var btn = document.getElementById("contactBtn");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn.onclick = function () {
     modal.style.display = "block";
-    document.body.style.overflow = 'hidden';
-}
+    document.body.style.overflow = "hidden";
+};
 
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
-    document.body.style.overflow = 'auto';
-}
+    document.body.style.overflow = "auto";
+};
 
-document.querySelector(".modal-box").addEventListener("click", function(event) {
-    event.stopPropagation();
-});
+document
+    .querySelector(".modal-box")
+    .addEventListener("click", function (event) {
+        event.stopPropagation();
+    });

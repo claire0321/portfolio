@@ -1,51 +1,69 @@
 const projects = [
     {
-        image: 'img/project_portfolio.png',
-        name: 'Website',
+        image: "../src/assets/img/project_portfolio.png",
+        name: "Website",
         description: "Claire's portfolio website",
-        tech: ['HTML', 'CSS', 'JavaScript']
+        tech: ["HTML", "CSS", "JavaScript"],
     },
     {
-        image: 'img/project_portfolio.png',
-        name: 'Website2',
+        image: "../src/assets/img/project_portfolio.png",
+        name: "Website2",
         description: "Claire's portfolio website2",
-        tech: ['HTML', 'CSS', 'JavaScript', 'Python']
+        tech: ["HTML", "CSS", "JavaScript", "Python"],
+    },
+    {
+        image: "../src/assets/img/project_portfolio.png",
+        name: "Website2",
+        description: "Claire's portfolio website2",
+        tech: ["HTML", "CSS", "JavaScript", "Python"],
+    },
+    {
+        image: "../src/assets/img/project_portfolio.png",
+        name: "Website2",
+        description: "Claire's portfolio website2",
+        tech: ["HTML", "CSS", "JavaScript", "Python"],
+    },
+    {
+        image: "../src/assets/img/project_portfolio.png",
+        name: "Website2",
+        description: "Claire's portfolio website2",
+        tech: ["HTML", "CSS", "JavaScript", "Python"],
     },
 ];
 
-const projectContainer = document.querySelector('.project-container');
+const projectContainer = document.querySelector(".project-container");
 
-projects.forEach(project => {
+projects.forEach((project) => {
     // Create the main list item div
-    const projectListItem = document.createElement('div');
-    projectListItem.className = 'project-list-item grey-background';
+    const projectListItem = document.createElement("div");
+    projectListItem.className = "project-list-item grey-background";
 
     // Create the image element
-    const projectImg = document.createElement('img');
-    projectImg.className = 'project-img';
+    const projectImg = document.createElement("img");
+    projectImg.className = "project-img";
     projectImg.src = project.image;
 
     // Create the project info container
-    const projectInfo = document.createElement('div');
-    projectInfo.className = 'project-info';
+    const projectInfo = document.createElement("div");
+    projectInfo.className = "project-info";
     // Create and append name and description spans
-    const projectName = document.createElement('span');
-    projectName.className =  'font-white project-name';
+    const projectName = document.createElement("span");
+    projectName.className = "font-white project-name";
     projectName.textContent = project.name;
     projectInfo.appendChild(projectName);
 
-    const projectDescription = document.createElement('span');
-    projectDescription.className = 'font-grey project-discription';
+    const projectDescription = document.createElement("span");
+    projectDescription.className = "font-grey project-discription";
     projectDescription.textContent = project.description;
     projectInfo.appendChild(projectDescription);
 
     // Create the technologies container
-    const techListContainer = document.createElement('div');
-    techListContainer.className = 'project-st-lists-container';
+    const techListContainer = document.createElement("div");
+    techListContainer.className = "project-st-lists-container";
     // loop through the tech array and create spans
-    project.tech.forEach(tech => {
-        const techSpan = document.createElement('span');
-        techSpan.className = 'font-white project-st-lists-item-small';
+    project.tech.forEach((tech) => {
+        const techSpan = document.createElement("span");
+        techSpan.className = "font-white st-lists-item-small";
         techSpan.textContent = tech;
         techListContainer.appendChild(techSpan);
     });
@@ -57,4 +75,4 @@ projects.forEach(project => {
 
     // Append the full project list item to the main container
     projectContainer.appendChild(projectListItem);
-})
+});
