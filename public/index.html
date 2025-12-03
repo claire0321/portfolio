@@ -6,16 +6,12 @@
         <meta property="og:title" content="Portofolio of Claire Kim" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Portofolio of Claire Kim" />
-        <meta
-            property="og:description"
-            content="[Claire portfolio] Portofolio of Claire Kim" />
+        <meta property="og:description" content="[Claire portfolio] Portofolio of Claire Kim" />
         <title>Portofolio of Claire Kim</title>
         <link rel="stylesheet" href="../src/styles/index.css" />
         <link rel="stylesheet" href="../src/styles/text.css" />
         <link rel="stylesheet" href="../src/styles/about_me.css" />
-        <link rel="stylesheet" href="../src/styles/career.css" />
         <link rel="stylesheet" href="../src/styles/project.css" />
-        <link rel="stylesheet" href="../src/styles/education.css" />
         <link rel="stylesheet" href="../src/styles/outro.css" />
         <link rel="stylesheet" href="../src/styles/contents_container.css" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -23,12 +19,10 @@
 
     <body>
         <div class="white-background-page">
+            <!-- NAV BAR -->
             <nav class="navbar">
                 <div class="nav-left">
-                    <a
-                        href="https://github.com/ikim318"
-                        class="underline"
-                        target="_blank"
+                    <a href="https://github.com/ikim318" class="underline" target="_blank"
                         >Github</a
                     >
                     <a
@@ -39,6 +33,8 @@
                     >
                 </div>
             </nav>
+
+            <!-- HOME PAGE -->
             <div class="home-contents">
                 <p class="font-white engineer center">Engineer</p>
                 <h2 class="greeting font-black center">
@@ -53,97 +49,21 @@
                 <div class="email">claire.inkyeong@gmail.com</div>
             </div>
         </div>
+
+        <!-- ABOUT ME PAGE -->
         <div class="about-me-page page-contents page">
             <h1 class="heading font-white" style="opacity: 1">About Me</h1>
-            <div class="skills-tools-container center">
-                <div class="skills-tools">
-                    <span class="st-heading font-white font-bold underline"
-                        >Skills</span
-                    >
-                    <div class="skills-tools-list font-white font-bold">
-                        <div class="st-list-item">
-                            <span>Python</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="st-list-item">
-                            <span>Java</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 60%"></div>
-                            </div>
-                        </div>
-                        <div class="st-list-item">
-                            <span>RStudio</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="st-list-item">
-                            <span>HTML/CSS</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 50%"></div>
-                            </div>
-                        </div>
-                        <div class="st-list-item">
-                            <span>MYSQL</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 60%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-tools">
-                    <span class="st-heading font-white font-bold underline"
-                        >Tools</span
-                    >
-                    <div class="skills-tools-list font-white font-bold">
-                        <div class="st-list-item">
-                            <span>Matlab</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="st-list-item">
-                            <span>Kubernetes</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 40%"></div>
-                            </div>
-                        </div>
-                        <div class="st-list-item">
-                            <span>Docker</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 60%"></div>
-                            </div>
-                        </div>
-                        <div class="st-list-item">
-                            <span>CI/CD</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 30%"></div>
-                            </div>
-                        </div>
-                        <div class="st-list-item">
-                            <span>Jenkins</span>
-                            <div class="bar">
-                                <div class="progress" style="width: 40%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div id="skills-tools-container" class="skills-tools-container center"></div>
         </div>
+
+        <!-- MAIN CONTAINER -->
         <div class="main-container">
+            <!-- SIDE NAV -->
             <div class="side-nav">
-                <h1
-                    class="heading font-white"
-                    data-target="career-page"
-                    data-id="career-page">
+                <h1 class="heading font-white" data-target="career-page" data-id="career-page">
                     Career
                 </h1>
-                <h1
-                    class="heading font-white"
-                    data-target="project-page"
-                    data-id="project-page">
+                <h1 class="heading font-white" data-target="project-page" data-id="project-page">
                     Project
                 </h1>
                 <h1
@@ -153,6 +73,8 @@
                     Education
                 </h1>
             </div>
+
+            <!-- PAGE CONTENTS -->
             <div class="page-contents">
                 <div class="career-page page-contents page" id="career-page">
                     <div class="career-container"></div>
@@ -160,21 +82,18 @@
                 <div class="project-page page-contents page" id="project-page">
                     <div class="project-container"></div>
                 </div>
-                <div
-                    class="education-page page-contents page"
-                    id="education-page">
+                <div class="education-page page-contents page" id="education-page">
                     <div class="education-container"></div>
                 </div>
             </div>
         </div>
+
+        <!-- OUTRO PAGE -->
         <div class="white-background-page paper-background">
             <div class="outro-contents page">
                 <p class="font-white engineer center">Thank you</p>
                 <div class="outro-navigation">
-                    <a
-                        href="https://github.com/ikim318"
-                        class="underline center"
-                        target="_blank"
+                    <a href="https://github.com/ikim318" class="underline center" target="_blank"
                         >Github</a
                     >
                     <a
@@ -186,6 +105,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- RIGHT BUTTONS -->
         <div class="right-buttons">
             <button class="contact-btn" id="contactBtn">
                 <img
@@ -208,15 +129,8 @@
                 <div class="modal-content">
                     <h1>Contact</h1>
                     <form id="contactForm">
-                        <input
-                            type="email"
-                            id="emailInput"
-                            placeholder="Email"
-                            required />
-                        <textarea
-                            id="contextInput"
-                            placeholder="Context"
-                            required></textarea>
+                        <input type="email" id="emailInput" placeholder="Email" required />
+                        <textarea id="contextInput" placeholder="Context" required></textarea>
                         <button type="submit" class="send-btn">Send</button>
                     </form>
                 </div>
@@ -224,6 +138,7 @@
         </div>
 
         <script src="../src/components/index.js"></script>
+        <script src="../src/contents/aboutMe.js"></script>
         <script src="../src/contents/career.js"></script>
         <script src="../src/contents/project.js"></script>
         <script src="../src/contents/education.js"></script>

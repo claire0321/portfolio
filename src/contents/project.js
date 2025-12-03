@@ -29,6 +29,18 @@ const projects = [
         description: "Claire's portfolio website2",
         tech: ["HTML", "CSS", "JavaScript", "Python"],
     },
+    {
+        image: "../src/assets/img/project_portfolio.png",
+        name: "Website2",
+        description: "Claire's portfolio website2",
+        tech: ["HTML", "CSS", "JavaScript", "Python"],
+    },
+    {
+        image: "../src/assets/img/project_portfolio.png",
+        name: "Website2",
+        description: "Claire's portfolio website2",
+        tech: ["HTML", "CSS", "JavaScript", "Python"],
+    },
 ];
 
 const projectContainer = document.querySelector(".project-container");
