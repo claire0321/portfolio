@@ -4,7 +4,7 @@ const projects = [
         name: "Website",
         description: "Claire's portfolio website",
         tech: ["HTML", "CSS", "JavaScript"],
-        github: "https://github.com/ikim318",
+        github: "https://github.com/claire0321/portfolio",
     },
     {
         image: "../src/assets/img/orac.png",
@@ -12,41 +12,6 @@ const projects = [
         description: "Mini game platform",
         tech: ["HTML", "CSS", "JavaScript"],
         github: "https://github.com/skim411/Orac",
-    },
-    {
-        image: "../src/assets/img/project_portfolio.png",
-        name: "Website2",
-        description: "Claire's portfolio website2",
-        tech: ["HTML", "CSS", "JavaScript", "Python"],
-        github: "https://github.com/ikim318",
-    },
-    {
-        image: "../src/assets/img/project_portfolio.png",
-        name: "Website2",
-        description: "Claire's portfolio website2",
-        tech: ["HTML", "CSS", "JavaScript", "Python"],
-        github: "https://github.com/ikim318",
-    },
-    {
-        image: "../src/assets/img/project_portfolio.png",
-        name: "Website2",
-        description: "Claire's portfolio website2",
-        tech: ["HTML", "CSS", "JavaScript", "Python"],
-        github: "https://github.com/ikim318",
-    },
-    {
-        image: "../src/assets/img/project_portfolio.png",
-        name: "Website2",
-        description: "Claire's portfolio website2",
-        tech: ["HTML", "CSS", "JavaScript", "Python"],
-        github: "https://github.com/ikim318",
-    },
-    {
-        image: "../src/assets/img/project_portfolio.png",
-        name: "Website2",
-        description: "Claire's portfolio website2",
-        tech: ["HTML", "CSS", "JavaScript", "Python"],
-        github: "https://github.com/ikim318",
     },
 ];
 
