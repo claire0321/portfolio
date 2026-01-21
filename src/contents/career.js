@@ -12,13 +12,6 @@ const careers = [
         ],
         skills: ["Python", "MySQL", "Docker", "Jenkins", "Harbor", "ArgoCD"],
     },
-    {
-        date: "2024.12 - 2025.02",
-        institution: "Timegate",
-        role: "@ Internship",
-        description: ["FastAPI", "Integrated MYSQL", "CI/CD", "Docker"],
-        skills: ["Python", "MySQL", "Docker"],
-    },
 ];
 
 const careerContainer = document.querySelector(".career-container");
